@@ -1,0 +1,23 @@
+{
+  "name": "jobtest",
+  "version": "1.0.0",
+  "description": "Find out your love compatibility",
+  "author": "Andrew Robinson <andrewmcrobinson@gmail.com>",
+  "main": "server.js",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "mocha 'src/**/*.test.js'",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.23.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-plugin-import": "^2.22.1",
+    "mocha": "^8.3.2",
+    "sinon": "^10.0.1"
+  }
+}
