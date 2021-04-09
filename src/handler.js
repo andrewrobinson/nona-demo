@@ -1,9 +1,11 @@
+/* eslint-disable no-param-reassign */
+/* eslint-disable no-restricted-syntax */
 export default class Handler {
   constructor(calculators) {
     // 4. The sum of all the weights the aggregator uses always sum up to 1.0.
     // If there's just 1 expected input then that input has a weight of 1.00
 
-    if (calculators.length == 1) {
+    if (calculators.length === 1) {
       calculators[0].weight = 1;
     }
 
@@ -12,7 +14,7 @@ export default class Handler {
       cumulativeWeight += calculator.weight;
     }
 
-    if (cumulativeWeight != 1) {
+    if (cumulativeWeight !== 1) {
       console.log('ERROR - calculator weights do not sum to 1! Check calculator configuration.');
       process.exit(1);
     }
